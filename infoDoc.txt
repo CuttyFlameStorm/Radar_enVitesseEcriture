@@ -1,0 +1,27 @@
+Radar
+TP 3 du Module 03 – Développer des librairies en JavaScript
+
+Avant de démarrer ce TP, il convient d’avoir suivi les vidéos des modules 1 à 3.
+
+Durée estimée
+1 heure à 2 heures
+Énoncé
+L’application Radar permet de déterminer la vitesse d’écriture de l’utilisateur. Voici une capture d’écran présentant les caractéristiques visuelles de cette application.
+ 
+<div>info
+Vitesse générale: 238 lettres/min
+Vitesse dernier intermédiaire: 203 lettre/min
+
+veuillez écrire votre texte, je vous dirai à quelle vitesse vous écrivez :
+</div>
+
+<input type:textarea></input>
+
+l'utilisateur se met à ecrire du texte dans le champs textarea.
+
+suivant la vitesse de saisie , le calcul sera fait nous communiquant sa vitesse.
+
+La vitesse générale est la vitesse moyenne depuis que l’utilisateur a commencé à écrire son texte. La vitesse du dernier intermédiaire est la vitesse d’écriture sur les 5 dernières secondes.
+Le calcul de la vitesse débute au moment où le focus est positionné sur la zone de saisie et s’effectue toutes les 5 secondes (vous pouvez rendre paramétrable cette caractéristique). Les vitesses sont actualisées sur l’écran à la fin de chaque calcul.
+Solution
+Une solution est proposée pour ce TP sous la forme de fichiers HTML, CSS et Javascript disponibles dans les ressources à télécharger.
