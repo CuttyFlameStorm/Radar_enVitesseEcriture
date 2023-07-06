@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Radar</title>
+    <link rel="stylesheet" type="text/css" href="Radar.css">
+
+</head>
+<body>
+    <div style="width: 100%; position: relative; height: 100px;">
+        <div id="blockChrono">
+            <h1 id="titreApp" style="text-align: center; color: greenyellow;">RADAR</h1>
+            <h2 style="margin-top: 20px; margin-bottom: 20px; text-align: center;" id="timer">00:00:00</h2>
+        </div>
+        <div id="blockSpinner">
+            <h1 style="display: none;" id="spinneur"></h1>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <div class="info">
+          <p>Vitesse générale: <span id="vitesseGenerale" style="padding: 3px; background-color: rgba(0, 0, 255, 0.192); border: 1px solid rgba(82, 122, 21, 0.219); color: aqua;"></span>  lettres/min</p>
+          <p style="margin-top: 20px;">Vitesse dernier intermédiaire: <span id="vitesseIntermediaire" style="padding: 3px; background-color: rgba(0, 0, 255, 0.192); border: 1px solid rgba(172, 255, 47, 0.075); color: aqua;"></span>  lettres/min</p>
+        </div>
+        <div class="input-area">
+          <textarea id="userInput" placeholder="Veuillez écrire votre texte afin de connaitre votre vitesse de saisie"
+          style="border: 3px solid rgba(58, 186, 224, 0.788); border-radius: 5px;"
+          ></textarea>
+        </div>
+      </div>
+      <button id="stop" style="display: none;">⏱️ Stop</button> <!-- Bouton initiallement masqué -->
+      <button id="reset">🔁 Actualiser</button> <!-- Ajout du bouton de réinitialisation -->
+     
+
+
+
+      <script src="Radar.js"></script>
+</body>
+</html>

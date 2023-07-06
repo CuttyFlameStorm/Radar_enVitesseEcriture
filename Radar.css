@@ -1,0 +1,131 @@
+
+
+body {
+    background-color: black;
+    color: wheat !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+  }
+  
+  .info {
+    margin-bottom: 20px;
+  }
+  
+  .input-area {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+
+  #stop {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    transition: all 0.2s ease;
+  }
+  #stop.clicked {
+    transition: 0.2s ease;
+    transform: translateY(2px);
+    background-color: green;
+  }
+  
+  
+  /* *****************EFFET SPINNER*********************** */
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #blockChrono {
+    position: absolute;
+    width: 100%;
+  }
+  #blockSpinner{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    width: 170px;
+    height: 170px;
+    /* background-color: #e63d3d; */
+    padding: 0;
+  }
+  
+  #spinneur {
+    position: relative;
+    
+  }
+  
+  #spinneur::after {
+    content: '';
+    position: absolute;
+    margin: 0;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border: 2px solid rgba(47, 189, 255, 0.726);
+    box-shadow: 1px 2px 7px rgb(31, 224, 208);
+    border-top-color: transparent;
+    animation: spinner 1s linear infinite;
+  }
+
+  #titreApp {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+
+  /* ***************AJOUT DU BOUTON RESET************************* */
+  #reset {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4f4f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reset:hover {
+    background-color: #e63d3d;
+  }
+  
+  #reset:active {
+    background-color: #c53737;
+  }
+  
