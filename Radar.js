@@ -6,7 +6,6 @@ const userInput = document.getElementById("userInput");
 const vitesseGenerale = document.getElementById("vitesseGenerale");
 const vitesseIntermediaire = document.getElementById("vitesseIntermediaire");
 const stopButton = document.getElementById("stop");
-// const resetButton = document.getElementById("reset");
 const timerElement = document.getElementById("timer");
 const spinneur = document.getElementById("spinneur"); // Ajout de cette ligne
 
@@ -93,24 +92,6 @@ function startTimer() {
     clearInterval(intervalId2);
     isTimerRunning = false;
   }
-//   function resetTimer() {
-//     stopTimer();
-//     minutes = 0;
-//     secondes = 0;
-//     millisecondes = 0;
-//     timerElement.textContent = "00:00:00";
-//     userInput.value = "";
-//     vitesseGenerale.textContent = "";
-//     vitesseIntermediaire.textContent = "";
-//     stopButton.style.display = "none";
-//     spinneur.style.display = "none";
-//   }
-// userInput.addEventListener("input", startTimer);
-// stopButton.addEventListener("click", stopTimer);
-// resetButton.addEventListener("click", resetTimer); // Réinitialiser le chronomètre lorsque vous cliquez sur le bouton "Réinitialiser"
-
-
-
 
 stopButton.addEventListener("click", () => {
     clearInterval(intervalId);
